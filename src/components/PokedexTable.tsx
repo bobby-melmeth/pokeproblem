@@ -1,8 +1,8 @@
 import React from 'react'
-import { Pokemon } from '../types/PokemonTypes'
+import { PokemonSearchResult } from '../types/PokemonTypes'
 
 type Props = {
-    pokemons: Pokemon[],
+    pokemons: PokemonSearchResult[],
 }
 
 const PokedexTable = ({pokemons}: Props) => {
@@ -12,8 +12,7 @@ const PokedexTable = ({pokemons}: Props) => {
             return (
                 <div>
                     <div>{pokemon.name}</div>
-                <div>{pokemon.sprite.front_default}</div>
-                <div>{pokemon.types.map((type) => type.name)}</div>
+                    <div>{pokemon.url}</div>
                 </div>
 
             )

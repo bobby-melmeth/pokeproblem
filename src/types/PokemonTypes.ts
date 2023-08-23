@@ -14,3 +14,8 @@ export type PokemonType = {
 export type PokemonSprite = {
     front_default: string
 }
+
+export type PokemonSearchResult = {
+    name: string
+    url: string
+}
